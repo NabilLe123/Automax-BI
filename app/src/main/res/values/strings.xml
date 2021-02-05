@@ -4,4 +4,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="incidents">Incidents</string>
+    <string name="exit_prompt">Are you sure you want to exit the app?</string>
 </resources>
