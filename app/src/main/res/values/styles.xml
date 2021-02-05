@@ -7,4 +7,31 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="MyTextViewRegular" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/quick_sand_medium</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:textSize">@dimen/main_text</item>
+    </style>
+
+    <style name="MyTextViewBold" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/quick_sand_bold</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:textSize">@dimen/main_text</item>
+    </style>
+
+    <style name="MyEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/quick_sand_medium</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/main_spacing_big</item>
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+        <item name="android:textSize">@dimen/main_text</item>
+    </style>
 </resources>

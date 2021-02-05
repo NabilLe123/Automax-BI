@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="signInActivityVM"
+            type="com.leader.automax.bi.auth.SignInActivityVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/mainBg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/main_spacing">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo_2" />
+
+                <TextView
+                    style="@style/MyTextViewBold"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/welcome"
+                    android:textSize="@dimen/main_text_big" />
+
+                <EditText
+                    style="@style/MyEditText"
+                    android:layout_marginStart="@dimen/main_spacing_big"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/main_spacing_big"
+                    android:background="@drawable/rectangle_round_corner"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/main_spacing_big"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:text="@={signInActivityVM.etEmailAccount}" />
+
+                <EditText
+                    style="@style/MyEditText"
+                    android:layout_margin="@dimen/main_spacing_big"
+                    android:background="@drawable/rectangle_round_corner"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="@dimen/main_spacing_big"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:text="@={signInActivityVM.etPassword}" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_spacing_big"
+                    android:background="@drawable/rectangle_round_corner"
+                    android:backgroundTint="@color/main_text"
+                    android:fontFamily="@font/quick_sand_medium"
+                    android:includeFontPadding="false"
+                    android:onClick="@{signInActivityVM::onSubmit}"
+                    android:padding="@dimen/main_spacing_big"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_text_big" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
