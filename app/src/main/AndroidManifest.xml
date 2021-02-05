@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".SplashActivity"
             android:configChanges="screenLayout|smallestScreenSize|screenSize|orientation"
@@ -27,6 +28,10 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".auth.SignInActivity"
+            android:configChanges="screenLayout|smallestScreenSize|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IncidentsActivity"
             android:configChanges="screenLayout|smallestScreenSize|screenSize|orientation"
             android:screenOrientation="portrait" />
     </application>

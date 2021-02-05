@@ -12,12 +12,13 @@
         style="@style/MyTextViewBold"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="#f8f8f8"
+        android:background="@color/colorPrimary"
         android:gravity="center"
         android:text="@string/dashboard"
         android:textColor="@color/main_text" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_incidents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/main_spacing_big"
