@@ -50,7 +50,7 @@
                     android:background="@drawable/rectangle_round_corner"
                     android:drawableStart="@drawable/ic_user"
                     android:drawablePadding="@dimen/main_spacing_big"
-                    android:hint="@string/email"
+                    android:hint="@string/username"
                     android:imeOptions="actionNext"
                     android:inputType="textEmailAddress"
                     android:text="@={signInActivityVM.etEmailAccount}" />

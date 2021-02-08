@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">Automax BI</string>
     <string name="welcome">Welcome!</string>
-    <string name="email">Email</string>
+    <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="dashboard">Dashboard</string>
     <string name="incidents">Incidents</string>
     <string name="exit_prompt">Are you sure you want to exit the app?</string>
     <string name="please_wait">Please Wait! Loading!!</string>
+    <string name="invalid_credentials">Invalid credentials! Please enter a valid username/password!!</string>
 </resources>
